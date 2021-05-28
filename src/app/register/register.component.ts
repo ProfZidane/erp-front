@@ -20,6 +20,10 @@ register = {
   constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
+    const ciph = this.authService.encrypt('zidane');
+    console.log(ciph);
+
+     // this.authService.decrypt(ciph);
   }
 
   // tslint:disable-next-line:typedef
